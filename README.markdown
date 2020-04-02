@@ -1,0 +1,5 @@
+# Satisfactory-Calc
+
+## Usage
+
+## Installation
