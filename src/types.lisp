@@ -1,6 +1,6 @@
-(defpackage satisfactory-calc
+(defpackage satisfactory-calc/types
   (:use :cl))
-(in-package :satisfactory-calc)
+(in-package :satisfactory-calc/types)
 
 (defstruct building
   (name "No name" :type string)

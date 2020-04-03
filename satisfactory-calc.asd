@@ -6,7 +6,8 @@
   :components ((:module "src"
                 :components
                 ((:file "main")
-		 (:file "types"))))
+		 (:file "types")
+		 (:file "data"))))
   :description ""
   :in-order-to ((test-op (test-op "satisfactory-calc/tests"))))
 
@@ -17,6 +18,7 @@
                "rove")
   :components ((:module "tests"
                 :components
-                ((:file "main"))))
+                ((:file "main")
+		 (:file "data"))))
   :description "Test system for satisfactory-calc"
   :perform (test-op (op c) (symbol-call :rove :run c)))
