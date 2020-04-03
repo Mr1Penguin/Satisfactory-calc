@@ -5,7 +5,8 @@
   :depends-on ()
   :components ((:module "src"
                 :components
-                ((:file "main"))))
+                ((:file "main")
+		 (:file "types"))))
   :description ""
   :in-order-to ((test-op (test-op "satisfactory-calc/tests"))))
 
