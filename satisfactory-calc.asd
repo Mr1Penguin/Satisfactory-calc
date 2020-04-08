@@ -7,7 +7,7 @@
                 :components
                 ((:file "main")
 		 (:file "types")
-		 (:file "data"))))
+		 (:file "data" :depends-on ("types")))))
   :description ""
   :in-order-to ((test-op (test-op "satisfactory-calc/tests"))))
 

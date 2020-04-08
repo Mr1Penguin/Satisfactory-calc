@@ -13,7 +13,7 @@
 
 (defstruct recipe
   (input #() :type vector)
-  (output nil :type item)
+  (output nil :type string)
   (per-min 0.0 :type float))
 
 (defparameter *purity* '((:impure . 30) (:normal . 60) (:pure . 120)))
@@ -22,3 +22,7 @@
   (resource "" :type string)
   (per-min 0.0 :type float)
   (purity :normal :type keyword))
+
+(defstruct miner
+  (mk 1 :type integer)
+  (multiplier 1.0 :type float))
