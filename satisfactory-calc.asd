@@ -5,7 +5,7 @@
   :depends-on ()
   :components ((:module "src"
                 :components
-                ((:file "main")
+                ((:file "main" :depends-on ("data"))
 		 (:file "types")
 		 (:file "data" :depends-on ("types")))))
   :description ""

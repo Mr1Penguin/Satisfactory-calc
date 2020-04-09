@@ -9,10 +9,11 @@
 
 (defstruct item
   (name "No name" :type string)
-  (recipes #() :type vector))
+  (recipes '() :type list)
+  (requirements '() :type list))
 
 (defstruct recipe
-  (input #() :type vector)
+  (input '() :type list)
   (output nil :type string)
   (per-min 0.0 :type float))
 

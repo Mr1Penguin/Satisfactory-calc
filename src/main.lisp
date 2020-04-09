@@ -1,5 +1,7 @@
 (defpackage satisfactory-calc
-  (:use :cl))
+  (:use :cl
+        :satisfactory-calc/data))
 (in-package :satisfactory-calc)
 
-;; blah blah blah.
+(defun build (request)
+  t)
